@@ -28,7 +28,7 @@ apiRouter.get('/test', function*(next) {
 staticRouter.use('/api', apiRouter.routes(), apiRouter.allowedMethods());
 
 app.use(staticRouter.routes(), staticRouter.allowedMethods());
-const port = 3000;
+const port = process.env.PORT || 3000;
 const ip = '0.0.0.0';
 module.exports = app.listen(port, ip);
 console.log(`Server listening on ${ip}:${port}`);
