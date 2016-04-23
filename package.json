@@ -4,8 +4,7 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "start": "pm2 start server.js",
-    "stop": "pm2 stop server.js",
+    "start": "node server.js",
     "dev": "pm2-dev server.js"
   },
   "repository": {
