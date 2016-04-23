@@ -1,0 +1,10 @@
+*.log
+*.pid
+*.seed
+.npm
+build/Release
+dist
+logs
+node_modules
+npm-debug.log*
+pids
